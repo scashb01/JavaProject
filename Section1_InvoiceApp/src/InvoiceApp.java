@@ -22,7 +22,7 @@ public class InvoiceApp {
         String intput = "?";
       
         // welcome the user to the program
-        System.out.println("Welcome to the Invoice Total Calculator v3");
+        System.out.println("Welcome to the Invoice Total Calculator v4");
         System.out.println();  // print a blank line
         
         // create a Scanner object named sc
