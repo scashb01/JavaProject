@@ -1,7 +1,8 @@
 import java.util.Scanner;
 /****************************************************************
 
-Description: First assignment for modifying the Invoice App
+Description: First assignment for modifying the Invoice App code. This code uses the programming 
+lanquage java to help with the users invoice. 
 Programmer’s name: Scout Ashburn
 Date Written: January 27, 2023
 GitHub repository URL: https://github.com/scashb01/JavaProject
@@ -23,7 +24,7 @@ public class InvoiceApp {
 
 		// welcome the user to the program
 		System.out.println("===========================================");
-		System.out.println("Welcome to the Invoice Total Calculator v4");
+		System.out.println("Welcome to the Invoice Total Calculator v5");
 		System.out.println("===========================================");
 		System.out.println();  // print a blank line
 
