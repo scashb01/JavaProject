@@ -8,7 +8,6 @@ import java.util.Locale;
  * @author Scout Ashburn
  * 
  *default class for setting up an animal
- 
  */
 public abstract class Animal {
 
