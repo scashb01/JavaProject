@@ -1,5 +1,5 @@
 package zoo.animal;
-
+ 
 public class Chicken extends Bird {
 
 	private final String type = "Chicken";

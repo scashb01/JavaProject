@@ -24,7 +24,7 @@ public abstract class Bird extends Animal{
 		return wingspan;
 	}
 /**
- * sets Wingspan 
+ * sets Wingspan  
  * @param wingspan
  * @throws Exception
  */

@@ -1,5 +1,5 @@
 package zoo.animal;
-
+ 
 public abstract class Fish extends Animal{
 
 	protected Water water;

@@ -5,3 +5,4 @@ public enum Water {
 	SALT,
 	UNKNOWN;
 }
+ 

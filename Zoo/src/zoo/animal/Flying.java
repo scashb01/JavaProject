@@ -6,3 +6,4 @@ public interface Flying {
 	void glide();
 	
 }
+ 

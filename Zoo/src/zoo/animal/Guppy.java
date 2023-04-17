@@ -20,7 +20,7 @@ public class Guppy extends Fish {
 	public String toString() {
 		return this.id + " " + this.type + " " + this.getBirthdateStr() + " " + this.getWeight();
 	}
-
+ 
 	@Override
 	public void eat() {
 		

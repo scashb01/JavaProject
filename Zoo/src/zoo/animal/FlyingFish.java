@@ -30,7 +30,7 @@ public class FlyingFish extends Fish  implements Flying, Swim{
 	public void glide() {
 		
 	}
-
+ 
 	@Override
 	public void eat() {
 		

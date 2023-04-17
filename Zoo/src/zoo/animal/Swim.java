@@ -6,3 +6,4 @@ public interface Swim {
 	void rise();
 	
 }
+ 
