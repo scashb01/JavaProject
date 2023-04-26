@@ -9,22 +9,50 @@ import java.util.Locale;
  *
  *default class for setting up an animal
  */
+/**
+ * @author scoutashburn
+ *
+ */
 public abstract class Animal {
 
+	/**
+	 * 
+	 */
 	private static int counter = 0;
 
+	/**
+	 * 
+	 */
 	protected static final DateTimeFormatter FORMAT = DateTimeFormatter.ofPattern("MM-dd-yyyy", Locale.US);
 
+	/**
+	 * 
+	 */
 	protected final int id;
 
+	/**
+	 * 
+	 */
 	protected Gender gender;
 
+	/**
+	 * 
+	 */
 	protected final String type = "Animal";
 
+	/**
+	 * 
+	 */
 	private LocalDate birthdate;
 
+	/**
+	 * 
+	 */
 	private float weight;
 
+	/**
+	 * 
+	 */
 	public  Animal() {
 		this.id = ++Animal.counter;
 		this.birthdate = null;
@@ -32,6 +60,12 @@ public abstract class Animal {
 		this.gender = Gender.UNKNOWN;
 	}
 
+	/**
+	 * @param <T>
+	 * @param birthdate
+	 * @param weight
+	 * @throws Exception
+	 */
 	public <T> Animal (T birthdate, float weight)throws Exception {
 		this();
 		this.setBirthdate(birthdate);
@@ -39,6 +73,11 @@ public abstract class Animal {
 	}
 
 
+	/**
+	 * @param <T>
+	 * @param gender
+	 * @throws Exception
+	 */
 	public <T> void setGender (T gender) throws Exception {
 		if(gender instanceof String) {
 			String s = (String) gender;
@@ -71,10 +110,16 @@ public abstract class Animal {
  * Gets the animals birthdate 
  * @return
  */
+	/**
+	 * @return
+	 */
 	public LocalDate getBirthdate() {
 		return this.birthdate;
 	}
 
+	/**
+	 * @return
+	 */
 	public String getBirthdateStr() {
 		if (this.birthdate == null)
 			return "UNKNOWN";
@@ -83,6 +128,11 @@ public abstract class Animal {
 	}
 
 
+	/**
+	 * @param <T>
+	 * @param birthdate
+	 * @throws Exception
+	 */
 	public <T> void setBirthdate(T birthdate)throws Exception {
 
 
@@ -102,10 +152,17 @@ public abstract class Animal {
 	 * gets animals weight 
 	 * @return
 	 */
+	/**
+	 * @return
+	 */
 	public float getWeight() {
 		return this.weight;
 	}
 
+	/**
+	 * @param weight
+	 * @throws Exception
+	 */
 	public void setWeight(float weight) throws Exception {
 		if ( weight > 0)
 			this.weight = weight;
@@ -114,26 +171,41 @@ public abstract class Animal {
 
 	}
 
+	/**
+	 * @return
+	 */
 	public int getId() {
 		return this.id;
 	}
 
 	
+	/**
+	 * @return
+	 */
 	public Gender getGender() {;
 	return this.gender;
 	}
 
 
 
+	/**
+	 * @return
+	 */
 	public String getType() {
 		return this.getType();
 	}
 
+	/**
+	 *
+	 */
 	@Override public String toString() {
 		return this.id + " " + this.type;
 	}
 
 
+	/**
+	 * 
+	 */
 	abstract public void eat();
 }
 
