@@ -115,11 +115,37 @@ public class JavaFXCalculator extends Application {
                 lastOperator = ' ';
                 tfDisplay.setText("0");
                 break;
-
+                //memory clear
             case "MC":
                 memoryValue = 0;
                 inStr = "0";
+                memoryDisplay.setText("Memory = " + memoryValue);
+                break;
+                // memory recall
+            case "MR":
+                inStr = String.valueOf(memoryValue);
+                tfDisplay.setText(memoryValue + "");
+                inStr = "0";
+                break;
+                //memory add
+            case "M+":
+                if (memoryValue != 0) {
+                    memoryValue += result;
+                }else{
+                    memoryValue = Double.parseDouble(inStr);
+                }
+                inStr = "0";
+                memoryDisplay.setText("Memory = " + memoryValue);
+                break;
 
+                //memory subtract
+            case "M-":
+                if (memoryValue != 0) {
+                    memoryValue -= result;
+                }else{
+                    memoryValue = (Double.parseDouble(inStr)* -1);
+                }
+                inStr = "0";
                 memoryDisplay.setText("Memory = " + memoryValue);
                 break;
         }
